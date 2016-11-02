@@ -1,0 +1,232 @@
+@font-face {
+    font-family: cienfuegos;
+    src: url('../fonts/Cienfuegos_demo_font.ttf');
+}
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: aliceblue;
+	margin: 0;
+	padding: 0;
+}
+
+
+section {
+	min-height: 100vh;
+}
+
+
+#intro {
+	background-color: #e0f2f1;
+	position: relative;
+}
+
+#skills {
+	background-color: #fff9c4;
+}
+
+#work {
+	background-color: #ffebee;
+}
+
+#about {
+	background-color: #b3e5fc;
+  padding-bottom: 10rem;
+}
+
+#hs {
+	color: black;
+	text-align: center;
+}
+
+.photo {
+	width: 40%;
+	border-radius: 100%;
+	border: solid 4px #00796b;
+	margin-top: 1rem;
+	transition: all .3s ease-out;
+}
+
+.photo:hover {
+	cursor: pointer;
+	transform: rotate(-15deg);
+}
+
+h1, h2, p {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+	font-family: 'cienfuegos', sans-serif;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+#intro h2 {
+	font-size: 3rem;
+}
+
+.note,
+.work-note {
+	font-family: 'Itim', cursive;
+	text-align: justify;
+	padding: 1rem;
+	padding-top: 2rem;
+  font-size: 1.3rem;
+}
+
+.question {
+  color: #dd2c00;
+  padding-left: 1.5rem;
+  padding-bottom: .5rem;
+}
+
+
+#work-list {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.odd-instance {
+  background-color: #f3e5f5;
+}
+
+.even-instance {
+  background-color: #c5cae9;
+}
+
+.work-instance {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.work-note {
+  font-style: italic;
+}
+
+.work-note a {
+  font-style: normal;
+  color: tomato;
+}
+
+.work-header {
+  margin: 0;
+  font-size: 2.3rem;
+  color: darkred;
+  padding-left: 1rem;
+}
+
+
+#general-menu {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  transition: all .3s ease-out;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.menu div p {
+	padding: 0;
+	font-size: 2rem;
+	font-family: 'cienfuegos', sans-serif;
+}
+
+.menu div {
+	background-color: teal;
+	height: 55px;
+	flex-grow: 1;
+	flex-basis: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+  z-index: 8;
+}
+
+.menu div:hover,
+.collapser:hover {
+	background-color: #b2dfdb;
+  cursor: pointer;
+}
+
+.menu div:hover p {
+	border-bottom: solid 2px black;
+}
+
+.collapser {
+  background-color: teal;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  z-index: 5;
+  border-radius: 100%;
+
+  position: relative;
+  top: 40px;
+  text-align: center;
+  padding-top: .5rem;
+}
+
+
+#skills,
+#work,
+#about {
+	position: relative;
+}
+
+#skills h1,
+#work h1,
+#about h1 {
+	font-size: 5rem;
+	text-align: center;
+}
+
+
+
+#skill-list {
+  padding-bottom: 5rem;
+}
+
+#skill-list h3 {
+	font-size: 1.8rem;
+	font-family: 'cienfuegos', sans-serif;
+	font-weight: normal;
+	padding-left: 1rem;
+	padding-top: 0.2rem;
+  color: tomato;
+}
+
+#skill-list li {
+	font-family: 'Itim', cursive;
+	list-style-type: none;
+  font-size: 1.2rem;
+}
+
+#skill-list ul {
+  margin: 0;
+}
+
+.contacts {
+  padding-top: 2rem;
+  list-style-type: none;
+  margin: 0;
+  font-family: 'Itim', cursive;
+  font-size: 1.2rem;
+}
